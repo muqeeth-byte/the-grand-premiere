@@ -63,38 +63,45 @@ function Invitation() {
       )}
 
       {/* HERO */}
-      <section className="spotlight relative flex min-h-screen flex-col items-center justify-center px-4 py-20 text-center">
+      <section className="spotlight relative flex min-h-[100svh] flex-col items-center justify-center px-5 py-16 text-center">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: revealed ? 1 : 0 }}
-          transition={{ duration: 1.5 }}
-          className="relative mx-auto max-w-3xl"
+          transition={{ duration: 1.2 }}
+          className="relative mx-auto w-full max-w-3xl"
         >
-          <div className="mb-4 font-display text-xs uppercase tracking-[0.5em] text-gold/80 sm:text-sm">
-            ✦  The Honour of Your Presence  ✦
+          <div className="mb-6 font-display text-[10px] uppercase tracking-[0.4em] text-gold/80 sm:text-sm sm:tracking-[0.5em]">
+            ✦ The Honour of Your Presence ✦
           </div>
 
-          <div className="relative py-8">
+          <div className="relative flex flex-col items-center justify-center gap-3 py-4 sm:gap-4 sm:py-8">
             <motion.h1
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: revealed ? 1 : 0, scale: revealed ? 1 : 0.9 }}
-              transition={{ duration: 1.2, delay: 0.3 }}
-              className="relative font-script text-6xl leading-none text-gold-gradient sm:text-8xl md:text-9xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: revealed ? 1 : 0, y: revealed ? 0 : 20 }}
+              transition={{ duration: 1.4, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+              className="block w-full text-center font-script text-[3.5rem] leading-[1.05] text-gold-gradient sm:text-8xl md:text-9xl"
             >
               Mariya
             </motion.h1>
-            <div className="relative my-2 flex items-center justify-center gap-3">
-              <span className="h-px w-12 bg-gold/60" />
-              <Heart className="h-4 w-4 text-gold animate-shimmer" />
-              <span className="font-display text-xs uppercase tracking-[0.4em] text-gold">&</span>
-              <Heart className="h-4 w-4 text-gold animate-shimmer" />
-              <span className="h-px w-12 bg-gold/60" />
-            </div>
+
+            <motion.div
+              initial={{ opacity: 0, scaleX: 0 }}
+              animate={{ opacity: revealed ? 1 : 0, scaleX: revealed ? 1 : 0 }}
+              transition={{ duration: 0.9, delay: 0.9 }}
+              className="flex w-full items-center justify-center gap-2 sm:gap-3"
+            >
+              <span className="h-px w-10 bg-gold/60 sm:w-16" />
+              <Heart className="h-3.5 w-3.5 text-gold animate-shimmer sm:h-4 sm:w-4" />
+              <span className="font-display text-[10px] uppercase tracking-[0.4em] text-gold sm:text-xs">&</span>
+              <Heart className="h-3.5 w-3.5 text-gold animate-shimmer sm:h-4 sm:w-4" />
+              <span className="h-px w-10 bg-gold/60 sm:w-16" />
+            </motion.div>
+
             <motion.h1
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: revealed ? 1 : 0, scale: revealed ? 1 : 0.9 }}
-              transition={{ duration: 1.2, delay: 0.6 }}
-              className="relative font-script text-6xl leading-none text-gold-gradient sm:text-8xl md:text-9xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: revealed ? 1 : 0, y: revealed ? 0 : 20 }}
+              transition={{ duration: 1.4, delay: 1.2, ease: [0.22, 1, 0.36, 1] }}
+              className="block w-full text-center font-script text-[3.5rem] leading-[1.05] text-gold-gradient sm:text-8xl md:text-9xl"
             >
               Arshad
             </motion.h1>
@@ -102,13 +109,14 @@ function Invitation() {
 
           <Divider />
 
-          <p className="font-display text-sm uppercase tracking-[0.4em] text-cream/80 sm:text-base">
+          <p className="font-display text-[10px] uppercase tracking-[0.35em] text-cream/80 sm:text-base sm:tracking-[0.4em]">
             invite you to a grand evening
           </p>
-          <p className="mt-3 font-body text-xl italic text-cream/90 sm:text-2xl">
+          <p className="mt-3 font-body text-lg italic leading-snug text-cream/90 sm:text-2xl">
             "Two souls, one story — Act I begins."
           </p>
         </motion.div>
+
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
