@@ -6,7 +6,7 @@ import { Curtain } from "@/components/Curtain";
 import { Countdown } from "@/components/Countdown";
 import { Gallery } from "@/components/Gallery";
 import { MusicToggle } from "@/components/MusicToggle";
-import ornament from "@/assets/gold-ornament.png";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
