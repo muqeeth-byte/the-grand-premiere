@@ -54,7 +54,7 @@ function Invitation() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 1 }}
             onClick={() => setOpened(true)}
-            className="group relative rounded-full border-2 border-gold/80 bg-burgundy-deep/40 px-10 py-4 font-display text-sm uppercase tracking-[0.4em] text-gold backdrop-blur-sm transition hover:bg-gold hover:text-burgundy-deep sm:text-base"
+            className="group relative min-h-[56px] rounded-full border-2 border-gold/80 bg-burgundy-deep/60 px-8 py-4 font-display text-xs uppercase tracking-[0.3em] text-gold shadow-[0_0_40px_rgba(201,168,76,0.35)] backdrop-blur-sm transition active:scale-95 hover:bg-gold hover:text-burgundy-deep sm:px-12 sm:text-base sm:tracking-[0.4em]"
           >
             <span className="absolute -inset-1 rounded-full bg-gold/20 opacity-0 blur-xl transition group-hover:opacity-100" />
             <span className="relative">Raise the Curtain</span>
