@@ -132,28 +132,28 @@ function Invitation() {
       </section>
 
       {/* RECEPTION */}
-      <section className="relative px-4 py-24">
+      <section className="relative px-5 py-16 sm:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
-            <p className="text-xs uppercase tracking-[0.5em] text-gold">Act II</p>
-            <h2 className="mt-4 font-display text-4xl text-gold-gradient sm:text-6xl">Wedding Reception</h2>
+            <p className="text-[10px] uppercase tracking-[0.4em] text-gold sm:text-xs sm:tracking-[0.5em]">Act II</p>
+            <h2 className="mt-3 font-display text-3xl text-gold-gradient sm:text-6xl">Wedding Reception</h2>
             <Divider />
-            <div className="grid gap-6 sm:grid-cols-3">
+            <div className="grid gap-4 sm:grid-cols-3 sm:gap-6">
               <EventCard icon={<Calendar />} label="Date" value="07 July 2026" />
               <EventCard icon={<Clock />} label="Time" value="After Maghrib" />
               <EventCard icon={<MapPin />} label="Venue" value="Gulshan-e-Majeedi" />
             </div>
-            <p className="mt-8 font-body text-lg italic text-cream/90 sm:text-xl">
+            <p className="mt-8 font-body text-base italic leading-relaxed text-cream/90 sm:text-xl">
               8-1-399/8, Janaki Nagar Colony,<br />Tolichowki, Hyderabad
             </p>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="mt-10 overflow-hidden rounded-lg border border-gold/40 shadow-[0_0_40px_rgba(201,168,76,0.2)]">
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="mt-8 overflow-hidden rounded-lg border border-gold/40 shadow-[0_0_40px_rgba(201,168,76,0.2)]">
             <iframe
               title="Wedding Reception Venue"
               src="https://www.google.com/maps?q=Gulshan-e-Majeedi+Janaki+Nagar+Colony+Tolichowki+Hyderabad&output=embed"
               width="100%"
-              height="320"
+              height="280"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="block w-full grayscale-[40%] contrast-[1.1]"
@@ -162,7 +162,7 @@ function Invitation() {
           <a
             href="https://www.google.com/maps/dir/?api=1&destination=Gulshan-e-Majeedi+Janaki+Nagar+Colony+Tolichowki+Hyderabad"
             target="_blank" rel="noreferrer"
-            className="mt-4 inline-flex items-center gap-2 rounded-full border border-gold/60 px-6 py-2 text-xs uppercase tracking-[0.3em] text-gold transition hover:bg-gold hover:text-burgundy-deep"
+            className="mt-5 inline-flex min-h-[48px] items-center gap-2 rounded-full border border-gold/60 bg-burgundy-deep/40 px-6 py-3 text-xs uppercase tracking-[0.3em] text-gold transition active:scale-95 hover:bg-gold hover:text-burgundy-deep"
           >
             <MapPin className="h-4 w-4" /> Get Directions
           </a>
@@ -170,13 +170,13 @@ function Invitation() {
       </section>
 
       {/* VALIMA */}
-      <section className="relative px-4 py-24">
+      <section className="relative px-5 py-16 sm:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
-            <p className="text-xs uppercase tracking-[0.5em] text-gold">Act I · Prelude</p>
-            <h2 className="mt-4 font-display text-4xl text-gold-gradient sm:text-6xl">Valima</h2>
+            <p className="text-[10px] uppercase tracking-[0.4em] text-gold sm:text-xs sm:tracking-[0.5em]">Act I · Prelude</p>
+            <h2 className="mt-3 font-display text-3xl text-gold-gradient sm:text-6xl">Valima</h2>
             <Divider />
-            <div className="grid gap-6 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
               <EventCard icon={<Calendar />} label="Date" value="06 July 2026" />
               <EventCard icon={<MapPin />} label="Venue" value="Kashish Palace" />
             </div>
@@ -185,17 +185,18 @@ function Invitation() {
       </section>
 
       {/* GALLERY */}
-      <section className="relative px-4 py-24">
+      <section className="relative px-5 py-16 sm:py-24">
         <div className="mx-auto max-w-5xl text-center">
-          <p className="text-xs uppercase tracking-[0.5em] text-gold">Scenes from the Stage</p>
-          <h2 className="mt-4 font-display text-4xl text-gold-gradient sm:text-6xl">Gallery</h2>
+          <p className="text-[10px] uppercase tracking-[0.4em] text-gold sm:text-xs sm:tracking-[0.5em]">Scenes from the Stage</p>
+          <h2 className="mt-3 font-display text-3xl text-gold-gradient sm:text-6xl">Gallery</h2>
           <Divider />
           <Gallery />
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer className="relative px-4 pb-12 pt-16 text-center">
+      <footer className="relative px-5 pb-10 pt-12 text-center sm:pt-16">
+
         <Divider />
         <p className="font-script text-4xl text-gold-gradient sm:text-5xl">Mariya & Arshad</p>
         <p className="mt-3 text-xs uppercase tracking-[0.4em] text-cream/60">
