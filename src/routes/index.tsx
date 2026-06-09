@@ -54,7 +54,7 @@ function Invitation() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 1 }}
             onClick={() => setOpened(true)}
-            className="group relative min-h-[56px] rounded-full border-2 border-gold/80 bg-burgundy-deep/60 px-8 py-4 font-display text-xs uppercase tracking-[0.3em] text-gold shadow-[0_0_40px_rgba(201,168,76,0.35)] backdrop-blur-sm transition active:scale-95 hover:bg-gold hover:text-burgundy-deep sm:px-12 sm:text-base sm:tracking-[0.4em]"
+            className="group relative rounded-full border-2 border-gold/80 bg-burgundy-deep/40 px-10 py-4 font-display text-sm uppercase tracking-[0.4em] text-gold backdrop-blur-sm transition hover:bg-gold hover:text-burgundy-deep sm:text-base"
           >
             <span className="absolute -inset-1 rounded-full bg-gold/20 opacity-0 blur-xl transition group-hover:opacity-100" />
             <span className="relative">Raise the Curtain</span>
@@ -63,45 +63,38 @@ function Invitation() {
       )}
 
       {/* HERO */}
-      <section className="spotlight relative flex min-h-[100svh] flex-col items-center justify-center px-5 py-16 text-center">
+      <section className="spotlight relative flex min-h-screen flex-col items-center justify-center px-4 py-20 text-center">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: revealed ? 1 : 0 }}
-          transition={{ duration: 1.2 }}
-          className="relative mx-auto w-full max-w-3xl"
+          transition={{ duration: 1.5 }}
+          className="relative mx-auto max-w-3xl"
         >
-          <div className="mb-6 font-display text-[10px] uppercase tracking-[0.4em] text-gold/80 sm:text-sm sm:tracking-[0.5em]">
-            ✦ The Honour of Your Presence ✦
+          <div className="mb-4 font-display text-xs uppercase tracking-[0.5em] text-gold/80 sm:text-sm">
+            ✦  The Honour of Your Presence  ✦
           </div>
 
-          <div className="relative flex flex-col items-center justify-center gap-3 py-4 sm:gap-4 sm:py-8">
+          <div className="relative py-8">
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: revealed ? 1 : 0, y: revealed ? 0 : 20 }}
-              transition={{ duration: 1.4, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-              className="block w-full text-center font-script text-[3.5rem] leading-[1.05] text-gold-gradient sm:text-8xl md:text-9xl"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: revealed ? 1 : 0, scale: revealed ? 1 : 0.9 }}
+              transition={{ duration: 1.2, delay: 0.3 }}
+              className="relative font-script text-6xl leading-none text-gold-gradient sm:text-8xl md:text-9xl"
             >
               Mariya
             </motion.h1>
-
-            <motion.div
-              initial={{ opacity: 0, scaleX: 0 }}
-              animate={{ opacity: revealed ? 1 : 0, scaleX: revealed ? 1 : 0 }}
-              transition={{ duration: 0.9, delay: 0.9 }}
-              className="flex w-full items-center justify-center gap-2 sm:gap-3"
-            >
-              <span className="h-px w-10 bg-gold/60 sm:w-16" />
-              <Heart className="h-3.5 w-3.5 text-gold animate-shimmer sm:h-4 sm:w-4" />
-              <span className="font-display text-[10px] uppercase tracking-[0.4em] text-gold sm:text-xs">&</span>
-              <Heart className="h-3.5 w-3.5 text-gold animate-shimmer sm:h-4 sm:w-4" />
-              <span className="h-px w-10 bg-gold/60 sm:w-16" />
-            </motion.div>
-
+            <div className="relative my-2 flex items-center justify-center gap-3">
+              <span className="h-px w-12 bg-gold/60" />
+              <Heart className="h-4 w-4 text-gold animate-shimmer" />
+              <span className="font-display text-xs uppercase tracking-[0.4em] text-gold">&</span>
+              <Heart className="h-4 w-4 text-gold animate-shimmer" />
+              <span className="h-px w-12 bg-gold/60" />
+            </div>
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: revealed ? 1 : 0, y: revealed ? 0 : 20 }}
-              transition={{ duration: 1.4, delay: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="block w-full text-center font-script text-[3.5rem] leading-[1.05] text-gold-gradient sm:text-8xl md:text-9xl"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: revealed ? 1 : 0, scale: revealed ? 1 : 0.9 }}
+              transition={{ duration: 1.2, delay: 0.6 }}
+              className="relative font-script text-6xl leading-none text-gold-gradient sm:text-8xl md:text-9xl"
             >
               Arshad
             </motion.h1>
@@ -109,14 +102,13 @@ function Invitation() {
 
           <Divider />
 
-          <p className="font-display text-[10px] uppercase tracking-[0.35em] text-cream/80 sm:text-base sm:tracking-[0.4em]">
+          <p className="font-display text-sm uppercase tracking-[0.4em] text-cream/80 sm:text-base">
             invite you to a grand evening
           </p>
-          <p className="mt-3 font-body text-lg italic leading-snug text-cream/90 sm:text-2xl">
+          <p className="mt-3 font-body text-xl italic text-cream/90 sm:text-2xl">
             "Two souls, one story — Act I begins."
           </p>
         </motion.div>
-
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -132,28 +124,28 @@ function Invitation() {
       </section>
 
       {/* RECEPTION */}
-      <section className="relative px-5 py-16 sm:py-24">
+      <section className="relative px-4 py-24">
         <div className="mx-auto max-w-3xl text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
-            <p className="text-[10px] uppercase tracking-[0.4em] text-gold sm:text-xs sm:tracking-[0.5em]">Act II</p>
-            <h2 className="mt-3 font-display text-3xl text-gold-gradient sm:text-6xl">Wedding Reception</h2>
+            <p className="text-xs uppercase tracking-[0.5em] text-gold">Act II</p>
+            <h2 className="mt-4 font-display text-4xl text-gold-gradient sm:text-6xl">Wedding Reception</h2>
             <Divider />
-            <div className="grid gap-4 sm:grid-cols-3 sm:gap-6">
+            <div className="grid gap-6 sm:grid-cols-3">
               <EventCard icon={<Calendar />} label="Date" value="07 July 2026" />
               <EventCard icon={<Clock />} label="Time" value="After Maghrib" />
               <EventCard icon={<MapPin />} label="Venue" value="Gulshan-e-Majeedi" />
             </div>
-            <p className="mt-8 font-body text-base italic leading-relaxed text-cream/90 sm:text-xl">
+            <p className="mt-8 font-body text-lg italic text-cream/90 sm:text-xl">
               8-1-399/8, Janaki Nagar Colony,<br />Tolichowki, Hyderabad
             </p>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="mt-8 overflow-hidden rounded-lg border border-gold/40 shadow-[0_0_40px_rgba(201,168,76,0.2)]">
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="mt-10 overflow-hidden rounded-lg border border-gold/40 shadow-[0_0_40px_rgba(201,168,76,0.2)]">
             <iframe
               title="Wedding Reception Venue"
               src="https://www.google.com/maps?q=Gulshan-e-Majeedi+Janaki+Nagar+Colony+Tolichowki+Hyderabad&output=embed"
               width="100%"
-              height="280"
+              height="320"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="block w-full grayscale-[40%] contrast-[1.1]"
@@ -162,7 +154,7 @@ function Invitation() {
           <a
             href="https://www.google.com/maps/dir/?api=1&destination=Gulshan-e-Majeedi+Janaki+Nagar+Colony+Tolichowki+Hyderabad"
             target="_blank" rel="noreferrer"
-            className="mt-5 inline-flex min-h-[48px] items-center gap-2 rounded-full border border-gold/60 bg-burgundy-deep/40 px-6 py-3 text-xs uppercase tracking-[0.3em] text-gold transition active:scale-95 hover:bg-gold hover:text-burgundy-deep"
+            className="mt-4 inline-flex items-center gap-2 rounded-full border border-gold/60 px-6 py-2 text-xs uppercase tracking-[0.3em] text-gold transition hover:bg-gold hover:text-burgundy-deep"
           >
             <MapPin className="h-4 w-4" /> Get Directions
           </a>
@@ -170,13 +162,13 @@ function Invitation() {
       </section>
 
       {/* VALIMA */}
-      <section className="relative px-5 py-16 sm:py-24">
+      <section className="relative px-4 py-24">
         <div className="mx-auto max-w-3xl text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
-            <p className="text-[10px] uppercase tracking-[0.4em] text-gold sm:text-xs sm:tracking-[0.5em]">Act I · Prelude</p>
-            <h2 className="mt-3 font-display text-3xl text-gold-gradient sm:text-6xl">Valima</h2>
+            <p className="text-xs uppercase tracking-[0.5em] text-gold">Act I · Prelude</p>
+            <h2 className="mt-4 font-display text-4xl text-gold-gradient sm:text-6xl">Valima</h2>
             <Divider />
-            <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
+            <div className="grid gap-6 sm:grid-cols-2">
               <EventCard icon={<Calendar />} label="Date" value="06 July 2026" />
               <EventCard icon={<MapPin />} label="Venue" value="Kashish Palace" />
             </div>
@@ -185,18 +177,17 @@ function Invitation() {
       </section>
 
       {/* GALLERY */}
-      <section className="relative px-5 py-16 sm:py-24">
+      <section className="relative px-4 py-24">
         <div className="mx-auto max-w-5xl text-center">
-          <p className="text-[10px] uppercase tracking-[0.4em] text-gold sm:text-xs sm:tracking-[0.5em]">Scenes from the Stage</p>
-          <h2 className="mt-3 font-display text-3xl text-gold-gradient sm:text-6xl">Gallery</h2>
+          <p className="text-xs uppercase tracking-[0.5em] text-gold">Scenes from the Stage</p>
+          <h2 className="mt-4 font-display text-4xl text-gold-gradient sm:text-6xl">Gallery</h2>
           <Divider />
           <Gallery />
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer className="relative px-5 pb-10 pt-12 text-center sm:pt-16">
-
+      <footer className="relative px-4 pb-12 pt-16 text-center">
         <Divider />
         <p className="font-script text-4xl text-gold-gradient sm:text-5xl">Mariya & Arshad</p>
         <p className="mt-3 text-xs uppercase tracking-[0.4em] text-cream/60">
