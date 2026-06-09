@@ -75,12 +75,6 @@ function Invitation() {
           </div>
 
           <div className="relative py-8">
-            <img
-              src={ornament}
-              alt=""
-              aria-hidden
-              className="pointer-events-none absolute inset-0 mx-auto h-full w-full max-w-2xl object-contain opacity-60 animate-float-slow"
-            />
             <motion.h1
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: revealed ? 1 : 0, scale: revealed ? 1 : 0.9 }}
