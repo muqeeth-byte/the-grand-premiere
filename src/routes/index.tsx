@@ -136,23 +136,23 @@ function Invitation() {
               <EventCard icon={<MapPin />} label="Venue" value="Kings Palace" />
             </div>
             <p className="mt-8 font-body text-lg italic text-cream/90 sm:text-xl">
-              8-1-399/8, Janaki Nagar Colony,<br />Tolichowki, Hyderabad
+              12-2-706, Ushodaya Colony, Gudi Malkapur Rd,<br />Gudimalkapur, Hyderabad, Telangana 500008
             </p>
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="mt-10 overflow-hidden rounded-lg border border-gold/40 shadow-[0_0_40px_rgba(201,168,76,0.2)]">
             <iframe
               title="Wedding Reception Venue"
-              src="https://www.google.com/maps/place/Kings+Palace,+Noor+Ghat,+Gudi+Malkapur,+Gudimalkapur,+Hyderabad,+Telangana+500006&output=embed"
+              src="https://maps.google.com/maps?q=Kings%20Palace%20Gudimalkapur%20Hyderabad&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="320"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="block w-full grayscale-[40%] contrast-[1.1]"
+              className="block w-full grayscale-[40%] contrast-[1.1] border-none"
             />
           </motion.div>
           <a
-            href="https://www.google.com/maps/dir/?api=1&destination=Gulshan-e-Majeedi+Janaki+Nagar+Colony+Tolichowki+Hyderabad"
+            href="https://www.google.com/maps/dir/?api=1&destination=Kings+Palace+Gudimalkapur+Hyderabad"
             target="_blank" rel="noreferrer"
             className="mt-4 inline-flex items-center gap-2 rounded-full border border-gold/60 px-6 py-2 text-xs uppercase tracking-[0.3em] text-gold transition hover:bg-gold hover:text-burgundy-deep"
           >
