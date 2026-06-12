@@ -2,17 +2,16 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist/client",
   "framework": null,
-  "routes": [
+  "serverFunctions": {
+    "api/[[...]]": {
+      "maxDuration": 60,
+      "runtime": "nodejs20.x"
+    }
+  },
+  "rewrites": [
     {
-      "src": "^/(assets|robots\\.txt)/(.*)",
-      "dest": "/$1/$2",
-      "headers": {
-        "Cache-Control": "public, max-age=31536000, immutable"
-      }
-    },
-    {
-      "src": "/(.*)",
-      "dest": "dist/server/server.js"
+      "source": "/(.*)",
+      "destination": "/api/[[...]]"
     }
   ]
 }
