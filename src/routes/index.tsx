@@ -11,8 +11,8 @@ import { MusicToggle } from "@/components/MusicToggle";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mariya & Arshad — Wedding Reception · 07 July 2026" },
-      { name: "description", content: "A grand theatre of love. Join Mariya Jaweed & Mohammed Arshad for their wedding reception on 7 July 2026, Hyderabad." },
+      { title: "Mariya & Arshad — Wedding Reception · 04 July 2026" },
+      { name: "description", content: "A grand theatre of love. Join Mariya Jaweed & Mohammed Arshad for their wedding reception on 4 July 2026, Hyderabad." },
       { property: "og:title", content: "Mariya & Arshad — Wedding Reception" },
       { property: "og:description", content: "04 July 2026 · After Maghrib · Kings Palace, Gudimalkapur, Hyderabad" },
     ],
@@ -191,7 +191,7 @@ function Invitation() {
         <Divider />
         <p className="font-script text-4xl text-gold-gradient sm:text-5xl">Mariya & Arshad</p>
         <p className="mt-3 text-xs uppercase tracking-[0.4em] text-cream/60">
-          We await your presence · 07 · 07 · 2026
+          We await your presence · 04 · 07 · 2026
         </p>
       </footer>
     </main>
