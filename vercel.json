@@ -2,16 +2,14 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist/client",
   "framework": null,
-  "serverFunctions": {
-    "api/[[...]]": {
-      "maxDuration": 60,
-      "runtime": "nodejs20.x"
-    }
-  },
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/api/[[...]]"
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "api/[[...]].js"
     }
   ]
 }
