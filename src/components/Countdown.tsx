@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-const TARGET = new Date("2026-07-07T19:30:00+05:30").getTime();
+const TARGET = new Date("2026-07-04T19:30:00+05:30").getTime();
 
 function calc() {
   const diff = Math.max(0, TARGET - Date.now());
