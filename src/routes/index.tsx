@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
       { title: "Mariya & Arshad — Wedding Reception · 07 July 2026" },
       { name: "description", content: "A grand theatre of love. Join Mariya Jaweed & Mohammed Arshad for their wedding reception on 7 July 2026, Hyderabad." },
       { property: "og:title", content: "Mariya & Arshad — Wedding Reception" },
-      { property: "og:description", content: "07 July 2026 · After Maghrib · Kings Palace, Gudimalkapur, Hyderabad" },
+      { property: "og:description", content: "04 July 2026 · After Maghrib · Kings Palace, Gudimalkapur, Hyderabad" },
     ],
   }),
   component: Invitation,
@@ -131,7 +131,7 @@ function Invitation() {
             <h2 className="mt-4 font-display text-4xl text-gold-gradient sm:text-6xl">Wedding Reception</h2>
             <Divider />
             <div className="grid gap-6 sm:grid-cols-3">
-              <EventCard icon={<Calendar />} label="Date" value="07 July 2026" />
+              <EventCard icon={<Calendar />} label="Date" value="04 July 2026" />
               <EventCard icon={<Clock />} label="Time" value="After Maghrib" />
               <EventCard icon={<MapPin />} label="Venue" value="Kings Palace" />
             </div>
