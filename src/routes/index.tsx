@@ -143,7 +143,7 @@ function Invitation() {
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="mt-10 overflow-hidden rounded-lg border border-gold/40 shadow-[0_0_40px_rgba(201,168,76,0.2)]">
             <iframe
               title="Wedding Reception Venue"
-              src="https://www.google.com/maps/embed/v1/place?q=Kings+Palace,+Gudimalkapur,+Hyderabad&key="
+              src="https://maps.google.com/maps?q=Kings%20Palace%20Gudimalkapur%20Hyderabad&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="320"
               loading="lazy"
