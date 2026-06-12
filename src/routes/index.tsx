@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
       { title: "Mariya & Arshad — Wedding Reception · 07 July 2026" },
       { name: "description", content: "A grand theatre of love. Join Mariya Jaweed & Mohammed Arshad for their wedding reception on 7 July 2026, Hyderabad." },
       { property: "og:title", content: "Mariya & Arshad — Wedding Reception" },
-      { property: "og:description", content: "07 July 2026 · After Maghrib · Gulshan-e-Majeedi, Tolichowki, Hyderabad" },
+      { property: "og:description", content: "07 July 2026 · After Maghrib · Kings Palace, Gudimalkapur, Hyderabad" },
     ],
   }),
   component: Invitation,
@@ -133,7 +133,7 @@ function Invitation() {
             <div className="grid gap-6 sm:grid-cols-3">
               <EventCard icon={<Calendar />} label="Date" value="07 July 2026" />
               <EventCard icon={<Clock />} label="Time" value="After Maghrib" />
-              <EventCard icon={<MapPin />} label="Venue" value="Gulshan-e-Majeedi" />
+              <EventCard icon={<MapPin />} label="Venue" value="Kings Palace" />
             </div>
             <p className="mt-8 font-body text-lg italic text-cream/90 sm:text-xl">
               8-1-399/8, Janaki Nagar Colony,<br />Tolichowki, Hyderabad
@@ -143,7 +143,7 @@ function Invitation() {
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="mt-10 overflow-hidden rounded-lg border border-gold/40 shadow-[0_0_40px_rgba(201,168,76,0.2)]">
             <iframe
               title="Wedding Reception Venue"
-              src="https://www.google.com/maps?q=Gulshan-e-Majeedi+Janaki+Nagar+Colony+Tolichowki+Hyderabad&output=embed"
+              src="https://maps.app.goo.gl/aDN3zFiUJqxHzZs49"
               width="100%"
               height="320"
               loading="lazy"
