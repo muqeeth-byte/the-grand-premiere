@@ -144,9 +144,6 @@ function Invitation() {
               <EventCard icon={<Clock />} label="Time" value="After Isha" />
               <EventCard icon={<MapPin />} label="Venue" value="Kings Palace" />
             </div>
-            <p className="mt-8 font-body text-lg italic text-cream/90 sm:text-xl">
-              12-2-706, Ushodaya Colony, Gudi Malkapur Rd,<br />Gudimalkapur, Hyderabad, Telangana 500008
-            </p>
             <div className="mt-6 inline-block rounded-lg border border-gold/40 bg-burgundy-deep/50 px-6 py-4 backdrop-blur">
               <p className="font-display text-sm uppercase tracking-[0.3em] text-gold sm:text-base">
                 Isha Prayers in Jamat @ 8:30 PM
@@ -155,6 +152,10 @@ function Invitation() {
                 Majlis e Nikah after the Isha
               </p>
             </div>
+            <p className="mt-8 font-body text-lg italic text-cream/90 sm:text-xl">
+              12-2-706, Ushodaya Colony, Gudi Malkapur Rd,<br />Gudimalkapur, Hyderabad, Telangana 500008
+            </p>
+            
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="mt-10 overflow-hidden rounded-lg border border-gold/40 shadow-[0_0_40px_rgba(201,168,76,0.2)]">
