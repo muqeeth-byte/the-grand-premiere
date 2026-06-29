@@ -141,7 +141,7 @@ function Invitation() {
             <Divider />
             <div className="grid gap-6 sm:grid-cols-3">
               <EventCard icon={<Calendar />} label="Date" value="04 July 2026" />
-              <EventCard icon={<Clock />} label="Time" value="After Maghrib" />
+              <EventCard icon={<Clock />} label="Time" value="After Isha" />
               <EventCard icon={<MapPin />} label="Venue" value="Kings Palace" />
             </div>
             <p className="mt-8 font-body text-lg italic text-cream/90 sm:text-xl">
