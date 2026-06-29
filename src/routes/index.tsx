@@ -149,7 +149,7 @@ function Invitation() {
             </p>
             <div className="mt-6 inline-block rounded-lg border border-gold/40 bg-burgundy-deep/50 px-6 py-4 backdrop-blur">
               <p className="font-display text-sm uppercase tracking-[0.3em] text-gold sm:text-base">
-                Isha Prayers in Congregation / Jamat @ 8:30 PM
+                Isha Prayers in Jamat @ 8:30 PM
               </p>
               <p className="mt-2 font-body text-base italic text-cream/85 sm:text-lg">
                 Majlis e Nikah after the Isha
