@@ -72,9 +72,12 @@ function Invitation() {
           <div dir="rtl" lang="ar" className="mb-3 text-3xl text-gold sm:text-4xl md:text-5xl" style={{ fontFamily: 'var(--font-arabic)' }}>
             بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْم
           </div>
-          <div className="mb-4 font-display text-[10px] uppercase tracking-[0.4em] text-gold/80 sm:text-xs">
+          <div className="mb-6 font-display text-[10px] uppercase tracking-[0.4em] text-gold/80 sm:text-xs">
             In the Name of Allah, the Most Gracious, the Most Merciful
           </div>
+          <p className="mx-auto max-w-2xl font-body text-base italic text-cream/90 sm:text-lg">
+            "With gratitude to Almighty Allah SWT, we seek your gracious presence and valuable blessings on the joyful occasion of the marriage of our beloved daughter"
+          </p>
 
           <div className="relative py-8">
             <motion.h1
@@ -104,12 +107,7 @@ function Invitation() {
 
           <Divider />
 
-          <p className="mt-3 font-body text-lg italic text-cream/90 sm:text-xl">
-            "With gratitude to Almighty Allah SWT,<br />
-            we seek your gracious presence and valuable blessings<br />
-            on the joyful occasion of the marriage of our beloved daughter"
-          </p>
-          <p className="mt-6 font-body text-base text-cream/80 sm:text-lg">
+          <p className="mt-3 font-body text-base text-cream/80 sm:text-lg">
             Your presence will be a privilege<br />
             and your prayers would be an asset for us
           </p>
