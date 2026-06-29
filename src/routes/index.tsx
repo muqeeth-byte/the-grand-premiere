@@ -191,17 +191,44 @@ function Invitation() {
               <EventCard icon={<Calendar />} label="Date" value="06 July 2026" />
               <EventCard icon={<MapPin />} label="Venue" value="Kashish Palace" />
             </div>
+            <p className="mt-8 font-body text-lg italic text-cream/90 sm:text-xl">
+              12-2-706, Ushodaya Colony, Gudi Malkapur Rd,<br />Gudimalkapur, Hyderabad, Telangana 500008
+            </p>
           </motion.div>
+
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="mt-10 overflow-hidden rounded-lg border border-gold/40 shadow-[0_0_40px_rgba(201,168,76,0.2)]">
+            <iframe
+              title="Valima Venue"
+              src="https://maps.google.com/maps?q=Kings%20Palace%20Gudimalkapur%20Hyderabad&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="320"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="block w-full grayscale-[40%] contrast-[1.1] border-none"
+            />
+          </motion.div>
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=Kings+Palace+Gudimalkapur+Hyderabad"
+            target="_blank" rel="noreferrer"
+            className="mt-4 inline-flex items-center gap-2 rounded-full border border-gold/60 px-6 py-2 text-xs uppercase tracking-[0.3em] text-gold transition hover:bg-gold hover:text-burgundy-deep"
+          >
+            <MapPin className="h-4 w-4" /> Get Directions
+          </a>
         </div>
       </section>
 
-      {/* GALLERY */}
+      {/* BLESSING */}
       <section className="relative px-4 py-24">
-        <div className="mx-auto max-w-5xl text-center">
-          <p className="text-xs uppercase tracking-[0.5em] text-gold">Scenes from the Stage</p>
-          <h2 className="mt-4 font-display text-4xl text-gold-gradient sm:text-6xl">Gallery</h2>
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-xs uppercase tracking-[0.5em] text-gold">A Prayer</p>
           <Divider />
-          <Gallery />
+          <p className="font-body text-xl italic text-cream/90 sm:text-2xl">
+            May Allah bless and guide the would-be couple to the best of
+          </p>
+          <p className="mt-5 font-display text-base uppercase tracking-[0.3em] text-gold-gradient sm:text-lg">
+            Companionship · Love · Understanding<br />Happiness · Prosperity · Success
+          </p>
+          <p className="mt-6 font-script text-4xl text-gold sm:text-5xl">Aameen</p>
         </div>
       </section>
 
