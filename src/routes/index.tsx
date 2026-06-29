@@ -76,7 +76,7 @@ function Invitation() {
             In the Name of Allah, the Most Gracious, the Most Merciful
           </div>
           <p className="mx-auto max-w-2xl font-body text-base italic text-cream/90 sm:text-lg">
-            "With gratitude to Almighty Allah SWT, we seek your gracious presence and valuable blessings on the joyful occasion of the marriage of our beloved daughter"
+            With gratitude to Almighty Allah SWT, we seek your gracious presence and valuable blessings on the joyful occasion of the marriage of our beloved daughter
           </p>
 
           <div className="relative py-8">
