@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Calendar, Clock, MapPin, Heart, Sparkles } from "lucide-react";
 import { Curtain } from "@/components/Curtain";
 import { Countdown } from "@/components/Countdown";
-import { Gallery } from "@/components/Gallery";
 import { MusicToggle } from "@/components/MusicToggle";
 
 
