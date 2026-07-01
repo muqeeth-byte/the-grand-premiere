@@ -136,7 +136,7 @@ function Invitation() {
       <section className="relative px-4 py-24">
         <div className="mx-auto max-w-3xl text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
-            <p className="text-xs uppercase tracking-[0.5em] text-gold">Act II</p>
+            <p className="text-xs uppercase tracking-[0.5em] text-gold"></p>
             <h2 className="mt-4 font-display text-4xl text-gold-gradient sm:text-6xl">Wedding Reception</h2>
             <Divider />
             <div className="grid gap-6 sm:grid-cols-3">
